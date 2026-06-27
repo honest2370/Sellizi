@@ -1,4 +1,4 @@
--- SELLIZI Supabase schema starter.
+-- SELLIZI Supabase schema starter
 -- Admin tables are intentionally prefixed with admin_ to keep the admin space separate from seller and buyer RLS paths.
 
 create extension if not exists "pgcrypto";
