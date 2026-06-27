@@ -1,0 +1,43 @@
+{
+  "name": "SELLIZI Fintech Commerce OS",
+  "short_name": "SELLIZI",
+  "description": "Seller, buyer, and admin fintech workspace with Supabase, realtime support, and Ashtechpay payments.",
+  "id": "/",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "orientation": "portrait-primary",
+  "background_color": "#020617",
+  "theme_color": "#020617",
+  "categories": ["business", "finance", "productivity"],
+  "icons": [
+    { "src": "/icons/sellizi-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/icons/sellizi-icon-72.svg", "sizes": "72x72", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/icons/sellizi-icon-96.svg", "sizes": "96x96", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/icons/sellizi-icon-128.svg", "sizes": "128x128", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/icons/sellizi-icon-144.svg", "sizes": "144x144", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/icons/sellizi-icon-180.svg", "sizes": "180x180", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/icons/sellizi-icon-192.svg", "sizes": "192x192", "type": "image/svg+xml", "purpose": "any maskable" },
+    { "src": "/icons/sellizi-icon-512.svg", "sizes": "512x512", "type": "image/svg+xml", "purpose": "any maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Seller Overview", "short_name": "Seller", "description": "Open seller dashboard", "url": "/#overview", "icons": [{ "src": "/icons/sellizi-icon-96.svg", "sizes": "96x96", "type": "image/svg+xml" }] },
+    { "name": "Buyer Library", "short_name": "Buyer", "description": "Open buyer purchases", "url": "/#buyer-home", "icons": [{ "src": "/icons/sellizi-icon-96.svg", "sizes": "96x96", "type": "image/svg+xml" }] },
+    { "name": "Admin Command", "short_name": "Admin", "description": "Open admin command center", "url": "/#admin-overview", "icons": [{ "src": "/icons/sellizi-icon-96.svg", "sizes": "96x96", "type": "image/svg+xml" }] },
+    { "name": "Support Tickets", "short_name": "Support", "description": "Open support messages", "url": "/#messages", "icons": [{ "src": "/icons/sellizi-icon-96.svg", "sizes": "96x96", "type": "image/svg+xml" }] }
+  ],
+  "share_target": {
+    "action": "/?share-target=1",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url",
+      "files": [
+        { "name": "files", "accept": ["image/*", "application/pdf", "video/*", "audio/*", "text/*"] }
+      ]
+    }
+  }
+}
